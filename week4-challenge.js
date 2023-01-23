@@ -4,7 +4,7 @@ function LongestWord(sen) {
   //g modifier: global. All matches (don't return on first match)
   //i modifier: insensitive. Case insensitive match (ignores case of [a-zA-Z])
   let array = sen.match(/[a-z]+/gi);
-
+  console.log(array);
   let sorted = array.sort(function (a, b) {
     return b.length - a.length;
   });
@@ -12,7 +12,11 @@ function LongestWord(sen) {
 }
 
 // keep this function call here
-console.log(LongestWord(readline()));
+//LongestWord(readline());
+
+console.log(LongestWord("fun&!! time"));
+
+console.log(LongestWord("I love dogs"));
 
 /*
 Longest Word
